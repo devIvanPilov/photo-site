@@ -12,18 +12,17 @@ module.exports = {
   siteMetadata: {
     menu: [
       { name: "Home", to: "/" },
+      { name: "Blog", to: "/blog" },
       { name: "About", to: "/about" },
     ],
     links: {
-      facebook: "https://www.facebook.com/",
       instagram: "https://www.instagram.com/",
-      pinterest: "https://pinterest.com/",
       twitter: "https://twitter.com/",
     },
     locale: "en",
-    title: `John Doe`,
-    description: `Photography portfolio of John Doe`,
-    author: `@johndoe`,
+    title: `ivanpilov.photography`,
+    description: `Photography portfolio of Ivan Pilov`,
+    author: `@ivan`,
   },
   plugins: [
     `gatsby-plugin-postcss`,
@@ -54,8 +53,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `John Doe`,
-        short_name: `johndoe`,
+        name: `Ivan Pilov`,
+        short_name: `ivanpilov`,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#3182ce`,

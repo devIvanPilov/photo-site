@@ -1,6 +1,6 @@
 import { graphql, useStaticQuery } from "gatsby"
 import React from "react"
-import { FaFacebook, FaInstagram, FaTwitter, FaPinterest } from "react-icons/fa"
+import { FaInstagram, FaTwitter, } from "react-icons/fa"
 
 const Footer = () => {
   const {
@@ -12,9 +12,7 @@ const Footer = () => {
       site {
         meta: siteMetadata {
           links {
-            facebook
             instagram
-            pinterest
             twitter
           }
         }
@@ -26,21 +24,17 @@ const Footer = () => {
     <div className="container py-12 md:flex md:items-center md:justify-between">
       <ul className="flex justify-center md:order-2">
         <FooterLink href={links.twitter} icon={FaTwitter} label="Twitter" />
-        <FooterLink href={links.facebook} icon={FaFacebook} label="Facebook" />
+        
         <FooterLink
           href={links.instagram}
           icon={FaInstagram}
           label="Instagram"
         />
-        <FooterLink
-          href={links.pinterest}
-          icon={FaPinterest}
-          label="Pinterest"
-        />
+        
       </ul>
       <div className="mt-8 md:mt-0 md:order-1">
         <p className="text-center text-sm md:text-base text-gray-700">
-          &copy; 2020 John Doe. All rights reserved.
+          &copy; 2020 Ivan Pilov. All rights reserved.
         </p>
       </div>
     </div>
